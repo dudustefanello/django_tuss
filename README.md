@@ -1,8 +1,8 @@
-h2. DJANGO TUSS
+## DJANGO TUSS
 
 Manter modelos atualizados com os Sistemas de códigos da ANS (TUSS).
 
-h3. Uso:
+### Uso:
 
 Cadastrar um Sistema de Código no admin e chamar:
 
