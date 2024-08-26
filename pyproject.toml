@@ -11,8 +11,8 @@ version = "0.1.8"
 dependencies = [
     "django>=5.0",
 ]
-description = "Manter modelos atualizados com os Sistemas de codigos da ANS (TUSS)."
-readme = "README.rst"
+description = "Manter models atualizados com a Terminologia Unificada da Saúde Suplementar do Brasil"
+readme = "README.md"
 requires-python = ">= 3.10"
 authors = [
     {name = "Edaurdo Stefanello", email = "eduardo@stefanello.cc"},
@@ -33,6 +33,5 @@ classifiers = [
     "Topic :: Internet :: WWW/HTTP",
     "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
 ]
-
 [project.urls]
-Homepage = "https://www.example.com/"
+Homepage = "https://github.com/dudustefanello/django_tuss/"
