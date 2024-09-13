@@ -1,14 +1,14 @@
-name: Upload Python Package
+name: Upload Python Package - Test
 
 on:
   release:
-    types: [released]
+    types: [prereleased]
 
 permissions:
   contents: read
 
 jobs:
-  deploy:
+  deploy_test:
     runs-on: ubuntu-latest
 
     steps:
@@ -30,5 +30,6 @@ jobs:
     - name: Publish package
       uses: pypa/gh-action-pypi-publish@v1.10.1
       with:
+        repository_url: https://test.pypi.org/legacy/
         user: __token__
-        password: ${{ secrets.PYPI_API_TOKEN }}
+        password: ${{ secrets.PYPI_API_TOKEN_TEST }}
